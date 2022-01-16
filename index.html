@@ -12,8 +12,15 @@
 
 
 <style>
-	table {
+	body {
 		font-size: 35px;
+	}
+	
+	td {padding: 5px 5px 30px 5px !important;}
+	
+	#btnCopy {
+		font-size: 45px;
+		padding: 10px;
 	}
 
 </style>
@@ -24,7 +31,7 @@
 
 	<div id="wrap">
 
-		<table class="table table-bordered table-hover table-condensed">
+		<table class="table table-bordered table-condensed">
 			<colgroup>
 				<col style="width: 40px">
 				<col style="">
@@ -33,14 +40,15 @@
 				<td>1.</td>
 				<td>
 					<p>아래버튼을 클릭 하면 클립보드에 팬닉이 복사됩니다.</p>
-					<button id="btnCopy" type="button">팬닉 클립보드에 복사</button> 
+					<button class="btn btn-primary" id="btnCopy" type="button">팬닉 클립보드에 복사</button> 
 					<input id="txtNick" type="text"	value="수연s♥">
 				</td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>
-					<p>어플을 켜고 상단 왼쪽 아이콘을 클릭합니다.</p>
+					<p>어플의 닉네임 설정으로 이동합니다.<br>
+					   상단오른쪽 아이콘 > 설정 > 닉네임 설정</p>
 					<img src="./assets/img/m1.png" width="100%">
 				</td>
 			</tr>
