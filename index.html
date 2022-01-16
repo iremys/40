@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>팬닉을 만들어요</title>
+
+<link href="./assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/bootstrap/js/bootstrap.js"></script>
+
+
+<style>
+</style>
+
+
+</head>
+<body>
+
+	<div id="wrap">
+
+		<table class="table table-bordered table-hover table-condensed">
+			<colgroup>
+				<col style="width: 40px">
+				<col style="">
+			</colgroup>
+			<tr>
+				<td>1.</td>
+				<td>
+					<p>아래버튼을 클릭 하면 클립보드에 팬닉이 복사됩니다.</p>
+					<button id="btnCopy" type="button">팬닉 클립보드에 복사</button> 
+					<input id="txtNick" type="text"	value="수연s♥">
+				</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td>
+					<p>어플을 켜고 상단 왼쪽 아이콘을 클릭합니다.</p>
+					<img src="./assets/img/m1.png" width="680px">
+				</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>
+					<p>설정 >닉네임 설정 페이지로 이동합니다.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>
+					<p>클립보드에서 저장된 팬닉을 선택합니다</p>
+				</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+
+</body>
+
+
+
+<script type="text/javascript">
+//클립보드 복사
+$("#btnCopy").on("click", function(){
+	$("#txtNick").select();//복사할 텍스트를 선택
+	document.execCommand("copy"); //클립보드 복사 실행
+});
+</script>
+
+
+
+</html>
